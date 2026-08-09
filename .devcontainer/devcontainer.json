@@ -1,0 +1,19 @@
+{
+  "name": "imports-broken",
+  "image": "public.ecr.aws/docker/library/node:26.7.0-trixie",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "js/ts.tsdk.path": "/workspace/node_modules/typescript/lib",
+        "js/ts.enablePromptUseWorkspaceTsdk": false,
+        "npm.packageManager": "pnpm"
+      }
+    }
+  },
+  "remoteUser": "node",
+  "postCreateCommand": "npm i"
+}
